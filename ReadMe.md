@@ -104,22 +104,19 @@ CREATE TABLE `productos` (
 
 ### 0 Configuración inicial
 1. **Variables/Assets de Configuración en PIX**:
-   - `FAKESTORE_API_URL` = `https://fakestoreapi.com/products`
-   - `GRAPH_TENANT_ID` = `00000000-0000-0000-0000-000000000000`
-   - `GRAPH_CLIENT_ID` = `11111111-1111-1111-1111-111111111111`
-   - `GRAPH_CLIENT_SECRET` = `****`
-   - `ONEDRIVE_BASE_PATH` = `/RPA`  
-   - `ONEDRIVE_LOGS_PATH` = `/RPA/Logs`  
-   - `ONEDRIVE_REPORTES_PATH` = `/RPA/Reportes`
-   - `RUTA_LOCAL_LOGS` = `./Logs`
-   - `RUTA_LOCAL_REPORTES` = `./Reportes`
-   - `RUTA_LOCAL_DESCARGAS` = `./Descargas`
-   - `RUTA_LOCAL_EVIDENCIAS` = `./Evidencias`
-   - `DB_PROVIDER` = `SQLite`  (o `PostgreSQL`/`SQLServer`)
-   - `DB_CONNECTION` = `./datos.db` (SQLite)  
-     *(o cadena de conexión correspondiente para el motor elegido)*
-   - `FORM_URL` = `<<Pega aquí tu enlace de formulario>>`
-   - `FORM_COLABORADOR` = `Nombre Apellido` (valor por defecto)
+- **RootPath** = `C:\Prueba Tecnica`
+- **RefreshTokenAPI** = `<token para refrescar el token principal de graph>`
+- **StrConnectionStringDB** = `DRIVER={MySQL ODBC 9.4 Unicode Driver};SERVER=127.0.0.1;DATABASE=pix_bots;UID=root;PWD=12345;`
+- **StrRutaReportes** = `\Reportes`
+- **StrURLForm** = `https://forms.gle/tWJrNtVDWoY1QcXGA`
+- **StrNombreColaborador** = `Cristian Camilo Jimenez`
+- **StrEndPointFakeStore** = `https://fakestoreapi.com/products`
+- **StrFolderDescargas** = `\Descargas`
+- **StrEndPointTokenGraph** = `https://login.microsoftonline.com/common/oauth2/v2.0/token`
+- **StrClientIDTokenGraph** = `956fa16a-1327-4c36-82a2-331538f896fb`
+- **StrEndPointUploadJson** = `https://graph.microsoft.com/v1.0/me/drive/root:/RPA/Logs/{StrJsonName}.json:/content`
+- **StrEvidenciasPath** = `C:\Prueba Tecnica\Evidencias`
+
 
 2. **Permisos Graph** (app registration): conceder *admin consent* a los permisos requeridos.
 
